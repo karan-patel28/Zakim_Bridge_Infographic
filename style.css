@@ -1,0 +1,73 @@
+/* Apply a general reset for body margins and set up full height and flex centering */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    background: #f0f0f0; /* Light grey background */
+  }
+  
+  /* Styling for the bridge container */
+  .bridge-container {
+    position: relative;
+    width: calc(80vh * (668 / 484)); /* Adjust the width based on your image's aspect ratio */
+    height: 80vh; /* Set the container height to be 80% of the viewport height */
+    background-image: url('./zakim_bridge.webp'); /* Replace with the path to your actual image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  /* Ensure the container fits within smaller viewports */
+  @media (max-width: calc(80vh * (668 / 484))) {
+    .bridge-container {
+      width: 100vw;
+      height: calc(100vw * (484 / 668)); /* Adjust the height to maintain the aspect ratio */
+      background-size: contain; /* Make sure the entire image fits within the container */
+    }
+  }
+  
+  /* Enhanced styling for the text blocks */
+  .text-block {
+    position: absolute;
+    background: rgba(0, 51, 102, 0.5); /* Adjusted transparency for the blue background */
+    color: #ffffff; /* White text color for better contrast */
+    text-align: center;
+    padding: 10px 15px; /* Standardized top and bottom padding */
+    display: none; /* Hide the text blocks by default */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow for better readability */
+    font-family: 'Jost', sans-serif; /* Google Font Jost */
+    font-weight: 700; /* Jost bold weight */
+    font-size: 0.9em; /* Maintain original font size */
+  }
+  
+  /* Specific styles for the 'name' block */
+  .text-block.name {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 1.2em; /* Maintain original larger font size for the bridge name */
+  }
+  
+  /* Position each block to avoid overlap */
+  /* Additional positioning and styling adjustments as needed */
+  .text-block.legacy { top: 9%; left: 16%; }
+  .text-block.carries { top: 50%; right: 2%; text-align: left; }
+  .text-block.opened { top: 37%; left: 2%; }
+  .text-block.crosses { bottom: 17%; left: 2%; }
+  .text-block.significance { bottom: 10%; left: 2%; }
+  .text-block.designer { bottom: 3%; left: 2%; }
+  .text-block.cost { top: 30%; left: 2%; }
+  
+  /* On hover, display the text blocks */
+  .bridge-container:hover .text-block {
+    display: block;
+  }
+  

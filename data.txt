@@ -1,0 +1,13 @@
+Name: Leonard P. Zakim Bunker Hill Memorial Bridge    
+Design: Hybrid Steel and Concrete Cable-stayed bridge
+Length: 1,432 ft (436 m)
+Width: 183 ft (56 m)
+Height: 270 ft (82 m)
+Longest Span: 745 ft (227 m)
+Carries: 10 Lanes | I-93 | US 1
+Crosses: Charles River, MBTA Orange Line
+Construction cost: $105 million
+Opened: March 30, 2003 (northbound) | December 20, 2003 (southbound)
+Designed by: Swiss civil engineer Christian Menn, bridge designer Miguel Rosales, American civil engineer Ruchu Hsu
+Legacy: Named after commemorates Boston area leader and civil rights activist Leonard P. Zakim.
+Significance: Part of the Big Dig, became an icon for Boston.
